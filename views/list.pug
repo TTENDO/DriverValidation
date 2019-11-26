@@ -1,0 +1,20 @@
+//- users is the variable name----looping through the collection,so that we don't repeat ourselves.....user is a variable for users
+extends layout
+block content
+            div.row.justify-content-center
+                    div.col-md-5
+                        div.card-body.border
+                            header.card-header  
+                                h4.card-title Registerd Drivers
+                            table.table
+                                thead.thead-dark
+                                    tr
+                                        th Firstname
+                                        th Lastname
+                                        th Reg Number
+                                    tbody
+                                        each driver in drivers
+                                            tr
+                                                td #{driver.firstname}  
+                                                td #{driver.lastname} 
+                                                td #{driver.regNo}   

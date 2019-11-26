@@ -1,0 +1,13 @@
+extends layout.pug
+block content
+    form.form-signin.container
+        //- img.mb-4.mx-auto(src='/images/smart parking icon.png' alt width='72' height='72')
+        h1.h3.mb-3.font-weight-normal.text-center Please login
+        label.sr-only(for='inputUserName') User name
+        input#inputUserName.form-control(type='username' placeholder='Username' name="username" autofocus)
+        br
+        label.sr-only(for='inputPassword') Password
+        input#inputPassword.form-control(type='password' placeholder='Password' name="password")
+        
+        button.btn.btn-lg.btn-primary.btn-block(type='submit') login
+        p.mt-5.mb-3.text-muted © sps 2019
