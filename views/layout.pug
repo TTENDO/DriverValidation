@@ -2,12 +2,17 @@ doctype html
 html(lang="en")
     head
         title #{title} 
-        link(rel="stylesheet",href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
-        link(rel="stylesheet", href="/stylesheets/styles.css")
+        link(rel="stylesheet",href="/stylesheets/bootstrap.min.css")
+        //- link(rel="stylesheet", href="/stylesheets/styles.css")
+        link(rel="stylesheet",href="/stylesheets/style.css")
+        block styles
+
        
     body
-      div.container-fluid.bg-secondary.mb-4
-        div.card-body.text-center
-          h3.text-white Smart Parking System
+      br
+      //- div.container-fluid.bg-secondary.mb-4
+        //- div.card-body.text-center
+          //- h3.text-white #{title}
+        
           
       block content

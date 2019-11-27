@@ -11,10 +11,14 @@ block content
                                     tr
                                         th Firstname
                                         th Lastname
+                                        th username
                                         th Reg Number
+                                        th Password
                                     tbody
                                         each driver in drivers
                                             tr
                                                 td #{driver.firstname}  
                                                 td #{driver.lastname} 
-                                                td #{driver.regNo}   
+                                                td #{driver.username}
+                                                td #{driver.regNo}  
+                                                td #{driver.password}
