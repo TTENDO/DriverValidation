@@ -14,7 +14,7 @@ const registerSchema = new mongoose.Schema({
     },
     username:{
         type: String, unique:true,
-        required: "Please enter Username"
+        required: "Please enter your Username"
     },
     // number:{
     //     type: String,
