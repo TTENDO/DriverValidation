@@ -1,0 +1,139 @@
+extends layout
+
+block styles
+
+
+
+  link(rel='stylesheet' href='stylesheets/bootstrap.css')  
+  link(rel="stylesheet" href="stylesheets/index.css")
+  link(rel='stylesheet' href='/icons/css/all.css')
+block content
+
+
+  .row.container-fluid.bg
+
+
+    .col-sm-8
+      .row
+        .img-header
+          img(src='images/smart parking icon.png' alt='logo' height='100px' width='100px' style='padding:10px')
+        .col-md-8
+          br
+          h1(style='color:white') Smart Parking
+    .col-sm-4
+      nav.navbar.navbar-expand-lg.navbar-light
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarNav
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href='#')
+                button.btn(type='button' data-toggle='modal' data-target='#exampleModal' style='color:white;font-weight:bold').
+
+                  About
+
+            li.nav-item
+              // Drop down for register
+              .dropdown.nav-link
+                button.btn.dropdown-toggle(type='button' data-toggle='dropdown' style='color:white;font-weight:bold').
+
+                  Register
+
+                .dropdown-menu
+                  a.dropdown-item(data-toggle='modal' data-target='#ParkingOwnerModal' href='#') Parking Owner
+                  a.dropdown-item(data-toggle='modal' data-target='#DriversModal' href='#') Driver
+
+
+
+
+              li.nav-item
+                a.nav-link.text-white(href='#')
+                  button.btn(type='button' data-toggle='modal' data-target='#exampleModalCenter' style='color:white;font-weight:bold').
+
+                    Login
+
+
+    br
+    br
+    br
+    .row.text-center
+      .col-md-2
+      .col-md-8.jumbo
+        center
+          h3(style='color:#ccd2d8;font-size:50px') Are you stuck and in need of a parking spot?
+        br
+        // --Glowing button
+        | 
+
+        center
+          button.btn.btn-lg.btn-secondary.roundbutton.spot(type='button').
+
+            Click for a spot
+      .col-md-2
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    //- br
+    //- br
+    //- br
+    //- br
+
+
+
+    .row.foot(style="background:linear-gradient(rgba(15, 100, 170, 0.5),rgba(15,100, 170, 0.5),rgba(15,100, 170, 0.5));height:110px")
+
+      .col-sm-1
+      .col-sm-3.col-md-3
+        .row
+          h1(style='color:black') Smart Parking
+          p(style='color: black;font-weight: bold;font-size:15px') We ease the process of getting a parking spot
+
+      .col-sm-4.col-md-4
+
+
+        button.btn(type='button' data-toggle='modal' data-target='#exampleModal' style='color:black;font-weight:bold').
+
+          About Us
+
+        button.btn(type='button' data-toggle='modal' data-target='#exampleModalCenter' style='color:black;font-weight:bold').
+
+          Login
+
+        br
+        div(style='color: black;font-weight: bold')
+          center 100% - Smart Parking System | Copyright © 2019. 
+          center All rights reserved.
+      .col-sm-3.col-md-3
+        h3(style='color: black') Contact Us
+        .row
+          .col-sm-2.col-md-2
+            a(href='#')
+              i.fab.fa-facebook-square(style='color:white')
+          .col-sm-2.col-md-2
+            a(href='#')
+              i.fab.fa-instagram(style='color:white')
+          .col-sm-2.col-md-2
+            a(href='#')
+              i.fab.fa-twitter-square(style='color:white')
+          .col-sm-2.col-md-2
+            a(href='#')
+              i.fa.fa-phone-square(style='color:white')  +256705936481
+        .row
+          .col-md-2.col-sm-2
+          .col-sm-6.col-md-6
+            a(href='#')
+              i.fa.fa-envelope(style='color:white')     sps@gmail.com
+          .col-md-2.col-sm-2
+          .col-md-2.col-sm-2
+      .col-sm-1
+
+
+
+
+
+
+

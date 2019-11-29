@@ -1,0 +1,68 @@
+extends layout.pug
+
+block styles
+    link(rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css")
+    link(rel="stylesheet" type="text/css" href="stylesheets/style.css")
+
+block content
+    .row
+        .img-header
+            img(src='images/smart parking icon.png' alt='logo' height='100px' width='100px' style='padding:10px')
+        .col-md-6
+            .row.driverHeader
+                .col-sm-1
+                    h1 S
+                .col-sm-1
+                    h1 M
+                .col-sm-1
+                    h1 A
+                .col-sm-1
+                    h1 R
+                .col-sm-1
+                    h1 T
+                .col-sm-1
+                    h1 P
+                .col-sm-1
+                    h1 A
+                .col-sm-1
+                    h1 R
+                .col-sm-1
+                    h1 K
+                .col-sm-1
+                    h1 I
+                .col-sm-1
+                    h1 N
+                .col-sm-1
+                    h1 G
+    
+    .row
+        .col-md-2.sidenav
+            .container
+                img.avatar(src='images/profilepic.png' alt='Avatar')
+                a(href='#') Doreen
+                a(href='transactions.html') Transactions
+                a(href='#') Help
+                a(href='#') FAQs
+        .col-md-10
+            .topnav
+                input(type='text' placeholder='Search...' style='justify-self: center')
+            br
+            .mapouter
+                .gmap_canvas
+                    iframe#gmap_canvas(width='860' height='500' src='https://maps.google.com/maps?q=kampala&t=&z=13&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0')
+                    a(href='https://www.embedgooglemap.net/blog/nordvpn-coupon-code/') nordvpn coupon
+    
+    // Footer
+    .row.footer
+        .col-md-3
+        .col-md-5.
+            100% - Smart Parking System | Copyright © 2019. All rights reserved.
+        .col-md-4
+
+
+
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+  
+                    

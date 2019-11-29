@@ -3,7 +3,7 @@ extends layout.pug
 block styles
   link(rel="stylesheet" type="text/css" href="/stylesheets/styles.css")
 block content
-    form.form-signin.container
+    form.form-signin.container(method="post" action="/driverlogin")
         h1.h3.mb-3.font-weight-normal.text-center Please login
         label.sr-only(for='inputUserName') User name
         input#inputUserName.form-control(type='username' placeholder='Username' name="username" autofocus)

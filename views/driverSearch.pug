@@ -13,7 +13,7 @@ head
   .row
     .col-md-9
       h2 Search For Available Spot
-      #custom-search-input
+      form(method="post" action="/driverserach")#custom-search-input
         .input-group.col-md-12
           input.search-query.form-control(type='text' placeholder='Search')
           span.input-group-btn

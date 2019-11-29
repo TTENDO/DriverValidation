@@ -4,7 +4,7 @@ const Drivers = require("../models/registerModel");
 
 //Routes
 router.get("/", (req,res)=> {
-    res.render("login");
+    res.render("driverLogin", {title:"Login"});
 })
 
 // submits a login page information
@@ -12,11 +12,11 @@ router.post('/', async(req, res) => {
     try{
         const driver = await Drivers.authenticate(req.body.username, req.body.password);
         req.session.driver=driver;
-        res.redirect('register/search')
+        res.render('driverSearch')
        // res.send("hey " + user.firstname + " " + user.lastname)
     }catch{
-        res.render("Login Failed",)
-       res.redirect('register')
+        res.render('driverLogin', {error: "Login Failed"})
+    //    res.redi('register')
     }
 })
  

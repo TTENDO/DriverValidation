@@ -1,0 +1,109 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+body {
+  /*=====making the bg dim======*/
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("public/images/backg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+/*===========BODY==================*/
+
+/*===LANDING PAGE===*/
+/* .bg {
+  color: white;
+  height: 100%;
+} */
+
+div > h3 {
+  color: white;
+}
+
+/*=========glowing button========*/
+.spot {
+  background-color: #1c87c9;
+  -webkit-border-radius: 60px;
+  border-radius: 50px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  animation: glowing 1300ms infinite;
+}
+@keyframes glowing {
+  0% {
+    background-color: #0531a8;
+    box-shadow: 0 0 5px #0531a8;
+  }
+  50% {
+    background-color: #0531a8;
+    box-shadow: 0 0 20px #0531a8;
+  }
+  100% {
+    background-color: #5065a0;
+    box-shadow: 0 0 5px #5065a0;
+  }
+}
+
+.modal-content {
+  color: #000;
+}
+
+/*--Footer*/
+i {
+  font-size: 20px;
+  color: black;
+}
+
+.footer{
+  position: absolute;
+ 
+  width: 100%;
+  /* Set the fixed height of the footer here */
+   left: 0;
+    right: 0;
+  height: 40px;
+  line-height: 60px; /*Vertically center the text there*/
+  
+}
+
+/********----fORGOT PASSWORD***********/
+.emailReset {
+  background-color: gray;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/******==Driver View*************/
+.driverHeader {
+  color: white;
+  font-size: 16px;
+}
+/********Enter code window***********/
+a {
+  text-decoration: none;
+}
+.code > input {
+  padding: 10px;
+  border-radius: 45%;
+}
