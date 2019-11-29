@@ -3,7 +3,7 @@
 Our main goal is to achieve a system that eases finding parking for drivers at their finger tips.
 
 ###Motivation
-Through our intercation with a sample Of Uagndan drivers, they hustle with finding where to park
+Through our interaction with a sample Of Uagndan drivers, they hustle with finding where to park
 
 ###Development tools
 Built with node js, pug and mongoDb
@@ -13,7 +13,7 @@ Built with node js, pug and mongoDb
 ####This below is our landing page preview.
 ![image](https://user-images.githubusercontent.com/42311866/69848241-93a3e500-128a-11ea-8868-7ef141079879.png)
 
-####This is how our register page loooks like
+####This is how our register page looks like
 ![image](https://user-images.githubusercontent.com/42311866/69848526-660b6b80-128b-11ea-8c2b-98b7e208f395.png)
 
 ####After registering, our driver is prompted to log in
